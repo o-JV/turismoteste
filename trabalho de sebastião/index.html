@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Caruaru - Explore a Cidade</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">Turismo Caruaru</div>
+        <nav>
+            <a href="#eventos">Eventos</a>
+            <a href="#pontos">Pontos</a>
+            <a href="#mapa">Mapa</a>
+            <a href="#avaliacoes">Avaliações</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="fade-in-down">Descubra Caruaru</h1>
+        <p class="fade-in-down delay-1">A capital do artesanato e o maior e melhor forró do mundo!</p>
+        <a href="#mapa" class="btn-explore fade-in-down delay-2">Explorar Mapa</a>
+    </div>
+</section>
+
+<section id="eventos">
+    <h2 class="reveal">Próximos Eventos</h2>
+    <div id="listaEventos" class="cards"></div>
+</section>
+
+<section id="pontos">
+    <h2 class="reveal">Pontos Turísticos</h2>
+    <p class="hint reveal">Clique em um cartão para Waypoint no mapa!</p>
+    <div id="listaPontos" class="cards"></div>
+</section>
+
+<section id="mapa">
+    <h2 class="reveal">Mapa Interativo</h2>
+    <div id="map" class="reveal"></div>
+</section>
+
+<section id="avaliacoes">
+    <h2 class="reveal">Avaliações</h2>
+    <form id="formAvaliacao" class="reveal">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <textarea id="comentario" placeholder="Conte-nos sua experiência..." required></textarea>
+        <button type="submit">Enviar Avaliação</button>
+    </form>
+    <div id="listaAvaliacoes" class="reveal"></div>
+</section>
+
+<footer>
+    <p>© 2026 Turismo Caruaru - Feito com ❤️</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
